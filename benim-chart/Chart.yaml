@@ -1,0 +1,4 @@
+apiVersion: v2
+name: benim-ozel-chart
+description: Kendi yazdigim ilk Helm Chart
+version: 0.1.0
