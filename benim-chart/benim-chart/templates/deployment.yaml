@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: benim-chart-web
+spec:
+  replicas: {{ .Values.kopyaSayisi }}
+  selector:
+    matchLabels:
+      app: chart-web
+  template:
+    metadata:
+      labels:
+        app: chart-web
+    spec:
+      containers:
+      - name: web
+        image: {{ .Values.imajAdi }}
